@@ -1,28 +1,22 @@
 import { defineField, defineType } from 'sanity';
-import { RobotIcon } from '@sanity/icons';
 import type { TranslationEntry } from './i18n/translation';
+import { CaseIcon } from '@sanity/icons';
 
-export const service = defineType({
-  name: 'service',
-  title: 'Services',
+export const product = defineType({
+  name: 'product',
+  title: 'Product',
   type: 'object',
-  icon: RobotIcon,
+  icon: CaseIcon,
   fields: [
     defineField({
       name: 'name',
-      title: 'Title',
+      title: 'Name',
       type: 'translation',
     }),
     defineField({
       name: 'image',
-      title: 'Background Image',
+      title: 'Background image',
       type: 'seoImage',
-    }),
-    defineField({
-      name: 'points',
-      title: 'Bullet points',
-      type: 'array',
-      of: [{ type: 'translation' }],
     }),
   ],
   preview: {

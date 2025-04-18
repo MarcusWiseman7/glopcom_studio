@@ -1,11 +1,11 @@
 import { defineField, defineType } from 'sanity';
-import { AddUserIcon } from '@sanity/icons';
+import { UserIcon } from '@sanity/icons';
 
 export const partner = defineType({
   name: 'partner',
   title: 'Partners',
-  type: 'document',
-  icon: AddUserIcon,
+  type: 'object',
+  icon: UserIcon,
   fields: [
     defineField({
       name: 'name',
@@ -29,4 +29,9 @@ export const partner = defineType({
       type: 'url',
     }),
   ],
+  preview: {
+    select: {
+      title: 'name',
+    },
+  },
 });

@@ -8,14 +8,26 @@ export const hero = defineType({
   icon: ImageIcon,
   fields: [
     defineField({
+      name: 'title',
+      title: 'Title',
+      description: 'Title of the hero image',
+      type: 'translation',
+    }),
+    defineField({
+      name: 'subtitle',
+      title: 'Subtitle',
+      description: 'Subtitle of the hero image',
+      type: 'translation',
+    }),
+    defineField({
       name: 'image',
       title: 'Image',
       type: 'seoImage',
     }),
   ],
   preview: {
-    select: {
-      title: 'image.alt',
-    },
+    prepare: () => ({
+      title: 'Hero',
+    }),
   },
 });
