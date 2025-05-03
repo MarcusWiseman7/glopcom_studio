@@ -18,10 +18,9 @@ export const partner = defineType({
       type: 'seoImage',
     }),
     defineField({
-      name: 'points',
-      title: 'Bullet points',
-      type: 'array',
-      of: [{ type: 'string' }],
+      name: 'description',
+      title: 'Description',
+      type: 'translation',
     }),
     defineField({
       name: 'url',

@@ -1,3 +1,4 @@
+import { contact, social } from './contact';
 import { message } from './i18n/message';
 import { translation } from './i18n/translation';
 import { hero } from './media/hero';
@@ -22,4 +23,6 @@ export const schemaTypes = [
   logo,
   hero,
   translation,
+  contact,
+  social,
 ];
