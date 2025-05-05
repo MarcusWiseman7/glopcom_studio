@@ -10,6 +10,7 @@ import { product } from './product';
 import { products } from './products';
 import { service } from './service';
 import { services } from './services';
+import { testimonial } from './testimonial';
 
 export const schemaTypes = [
   partner,
@@ -25,4 +26,5 @@ export const schemaTypes = [
   translation,
   contact,
   social,
+  testimonial,
 ];

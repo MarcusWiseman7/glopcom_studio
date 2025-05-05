@@ -14,6 +14,11 @@ export const product = defineType({
       type: 'translation',
     }),
     defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'translation',
+    }),
+    defineField({
       name: 'image',
       title: 'Background image',
       type: 'seoImage',
